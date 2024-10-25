@@ -7,6 +7,6 @@ spec:
    proj: expense
   ports:
   - name: expense
-    protocal: TCP
+    protocol: TCP
     port: 80
     targetPort: 80 
