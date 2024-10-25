@@ -1,0 +1,17 @@
+kind: Pod
+metadata:
+  name: env-pod
+  labels:
+    proj: expense
+    env: dev
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    resources:
+      requests:
+        memory: "250Mi"
+        cpu: "250m"
+      limits:
+        memory: "300Mi"
+        cpu: "300m"
