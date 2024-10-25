@@ -4,6 +4,9 @@ metadata:
   name: annot_pod
   annotations:
     imageregistry: "https://hub.docker.com/"
+  labels:
+    namespace: expense
+    proj: expense
 spec:
   containers:
   - name: nginx
