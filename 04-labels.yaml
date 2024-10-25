@@ -3,6 +3,7 @@ kind: Pod
 metadata:
   name: labels-pod
   labels:
+    namespace: expense
     proj: expense
     env: dev
 spec:
