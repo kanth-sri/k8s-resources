@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: replica-pod
+  labels:
+    proj: axe
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      proj: axe
+  template:
+    metadata:
+      name: axe
+      labels:
+        proj: axe
+    spec:
+      containers:
+      - name: almalinux
+        image: almalinux
+        command: ["sleep", "1000"]
